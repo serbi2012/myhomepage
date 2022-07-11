@@ -5,7 +5,6 @@ function BillTable() {
     <Table striped bordered hover variant="dark">
       <thead>
         <tr>
-          <th>#</th>
           <th>상품</th>
           <th>이미지</th>
           <th>가격</th>
@@ -15,7 +14,6 @@ function BillTable() {
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
           <td>Mark</td>
           <td>Otto</td>
           <td>@mdo</td>
@@ -23,7 +21,6 @@ function BillTable() {
           <td>@mdo</td>
         </tr>
         <tr>
-          <td>2</td>
           <td>Jacob</td>
           <td>Thornton</td>
           <td>@fat</td>
@@ -31,7 +28,6 @@ function BillTable() {
           <td>@fat</td>
         </tr>
         <tr>
-          <td>3</td>
           <td>Jacob</td>
           <td>Thornton</td>
           <td>@fat</td>

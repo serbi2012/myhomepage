@@ -38,8 +38,12 @@
 
 .Item-List {
   display: grid;
-  grid-template-columns: repeat(4, 40vmin);
-  grid-template-rows: repeat(4, 40vmin);
+  grid-template-columns: repeat(3, 35vmin);
+  grid-template-rows: repeat(4, 50vmin);
+  gap: 5vmin;
+  width: 65vw;
+  transform: translateX(-17.5vw);
+  padding: 1vmin;
 }
 
 .Bill-Container {
