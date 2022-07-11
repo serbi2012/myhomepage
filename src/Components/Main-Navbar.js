@@ -45,6 +45,7 @@ function MainNavbar() {
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/Cart">Cart</Nav.Link>
+              <Nav.Link href="/Portpolio">Portpolio</Nav.Link>
               <Nav.Link href="/About">About</Nav.Link>
             </Nav>
           </Offcanvas.Body>

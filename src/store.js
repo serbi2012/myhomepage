@@ -1,5 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 import { ItemList } from "./Stores/Item-Store";
+import { PortpolioItems } from "./Stores/Portpolio-Items-Store";
 
 const ItemInCart = createSlice({
   name: "ItemInCart",
@@ -25,5 +26,6 @@ export default configureStore({
   reducer: {
     ItemList: ItemList.reducer,
     ItemInCart: ItemInCart.reducer,
+    PortpolioItems: PortpolioItems.reducer,
   },
 });
