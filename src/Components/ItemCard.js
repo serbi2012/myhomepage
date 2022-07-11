@@ -1,20 +1,35 @@
 import { Button, Card } from "react-bootstrap";
-import { ItemData } from "../Data/Items-Data";
+import { useDispatch, useSelector } from "react-redux";
+import { AddToCart } from "../store";
 
 function ItemCard() {
+  const Items = useSelector((state) => {
+    return state.ItemList;
+  });
+  const dispatch = useDispatch();
+
   return (
     <>
-      {ItemData.map((value, i) => {
+      {Items.map((value, i) => {
         return (
           <Card>
             <Card.Img variant="top" src={`/Images/Item_img${i}.jpg`} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Add to Cart</Button>
+              <Card.Title>{Items[i].name}</Card.Title>
+              <Card.Text>{Items[i].contents}</Card.Text>
+              <div className="Card-BtnContainer">
+                <Button
+                  variant="primary"
+                  onClick={() => {
+                    dispatch(AddToCart(Items[i]));
+                  }}
+                >
+                  Add to Cart
+                </Button>
+                <div className="Card-BtnContainer-Price">
+                  {Items[i].price} 원
+                </div>
+              </div>
             </Card.Body>
           </Card>
         );

@@ -1,12 +1,5 @@
 const ItemData = [
   {
-    id: 0,
-    name: "햄버거 세트",
-    contents: "맛있고 푸짐한 햄버거 세트",
-    price: 12000,
-    quantity: 0,
-  },
-  {
     id: 1,
     name: "햄버거 세트",
     contents: "맛있고 푸짐한 햄버거 세트",
@@ -15,23 +8,23 @@ const ItemData = [
   },
   {
     id: 2,
-    name: "햄버거 세트",
-    contents: "맛있고 푸짐한 햄버거 세트",
-    price: 12000,
+    name: "딸기파이",
+    contents: "내가 생각하는 그 비주얼은 아님",
+    price: 16000,
     quantity: 0,
   },
   {
     id: 3,
-    name: "햄버거 세트",
-    contents: "맛있고 푸짐한 햄버거 세트",
-    price: 12000,
+    name: "딸기 스무디",
+    contents: "스무디킹보다 맛있어보임",
+    price: 6000,
     quantity: 0,
   },
   {
     id: 4,
-    name: "햄버거 세트",
-    contents: "맛있고 푸짐한 햄버거 세트",
-    price: 12000,
+    name: "크레페",
+    contents: "얇은 크레페랑 생크림까지",
+    price: 11000,
     quantity: 0,
   },
   {
