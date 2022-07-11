@@ -51,6 +51,7 @@ function TotalPrice() {
 
     return result;
   }
+
   return <>{Total()}</>;
 }
 

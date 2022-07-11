@@ -1,4 +1,3 @@
-import { Pagination } from "react-bootstrap";
 import { BillTable } from "../Components/Bill-Table";
 import { ItemCard } from "../Components/ItemCard";
 

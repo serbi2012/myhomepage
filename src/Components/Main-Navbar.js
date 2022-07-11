@@ -5,7 +5,6 @@ import {
   FormControl,
   Nav,
   Navbar,
-  NavDropdown,
   Offcanvas,
 } from "react-bootstrap";
 
@@ -20,7 +19,13 @@ function MainNavbar() {
       sticky="top"
     >
       <Container fluid>
-        <Navbar.Brand href="/">RiAXO</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img
+            src={process.env.PUBLIC_URL + "/Images/Logo.png"}
+            className="LogoIMG"
+          ></img>
+          RiAXO
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${false}`} />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${false}`}
@@ -29,7 +34,7 @@ function MainNavbar() {
         >
           <Offcanvas.Header closeButton className="Dark-Class">
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${false}`}>
-              Offcanvas
+              Menu
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className="Dark-Class">

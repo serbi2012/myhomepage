@@ -13,7 +13,10 @@ function ItemCard() {
       {Items.map((value, i) => {
         return (
           <Card>
-            <Card.Img variant="top" src={`/Images/Item_img${i}.jpg`} />
+            <Card.Img
+              variant="top"
+              src={process.env.PUBLIC_URL + `/Images/Item_img${i}.jpg`}
+            />
             <Card.Body>
               <Card.Title>{Items[i].name}</Card.Title>
               <Card.Text>{Items[i].contents}</Card.Text>

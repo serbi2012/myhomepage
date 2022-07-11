@@ -10,6 +10,12 @@
   background-color: #333;
 }
 
+.LogoIMG {
+  width: 3vmin;
+  margin-bottom: 0.4vmin;
+  margin-right: 0.5vmin;
+}
+
 .Home-Title {
   font-size: 10vmin;
   color: #ccc;

@@ -13,7 +13,10 @@ function PortpolioCard() {
           <Card>
             <Card.Img
               variant="top"
-              src={`/Images/Portpolio_img${Items[i].id}.jpg`}
+              src={
+                process.env.PUBLIC_URL +
+                `/Images/Portpolio_img${Items[i].id}.jpg`
+              }
               className="p-2"
             />
             <Card.Body>
