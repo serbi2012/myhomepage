@@ -33,12 +33,7 @@ function MainNavbar() {
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className="Dark-Class">
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/Cart">Cart</Nav.Link>
-              <Nav.Link href="/About">About</Nav.Link>
-            </Nav>
-            <Form className="d-flex">
+            <Form className="d-flex mb-3">
               <FormControl
                 type="search"
                 placeholder="Search"
@@ -47,6 +42,11 @@ function MainNavbar() {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
+            <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/Cart">Cart</Nav.Link>
+              <Nav.Link href="/About">About</Nav.Link>
+            </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
