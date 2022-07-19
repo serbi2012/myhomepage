@@ -11,7 +11,7 @@
 }
 
 .LogoIMG {
-  width: 3vmin;
+  width: 1.5rem;
   margin-bottom: 0.4vmin;
   margin-right: 0.5vmin;
 }
@@ -40,6 +40,15 @@
 .Dark-Class {
   background-color: #333;
   color: #ccc;
+}
+
+.Home-Link {
+  width: 15vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5vmin;
+  margin-right: 5vmin;
 }
 
 .Item-List {

@@ -24,7 +24,7 @@ function PortpolioCard() {
               <Card.Text>{Items[i].contents}</Card.Text>
               <Button
                 className="Portpolio-Btn"
-                variant="primary"
+                variant="secondary"
                 href={Items[i].link}
               >
                 Start to Play

@@ -22,7 +22,7 @@ function ItemCard() {
               <Card.Text>{Items[i].contents}</Card.Text>
               <div className="Card-BtnContainer">
                 <Button
-                  variant="primary"
+                  variant="secondary"
                   onClick={() => {
                     dispatch(AddToCart(Items[i]));
                   }}

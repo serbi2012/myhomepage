@@ -21,6 +21,13 @@ const PortpolioItems = createSlice({
       contents: "간편하게 타건을 테스트할 수 있는 애플리케이션.",
       link: "https://serbi2012.github.io/Typing_Test/",
     },
+    {
+      id: 4,
+      name: "Typing Test React.ver",
+      contents:
+        "간편하게 타건을 테스트할 수 있는 애플리케이션의 React버전입니다.",
+      link: "https://serbi2012.github.io/Typing_Test_React/",
+    },
   ],
   reducers: {},
 });
