@@ -17,10 +17,17 @@ const ItemInCart = createSlice({
 
       state.push(action.payload);
     },
+    setItemQuantity(state, action) {
+      for (let i = 0; i < state.length; i++) {
+        if (state[i].id === action.payload[0].id) {
+          state[i].quantity = action.payload[1];
+        }
+      }
+    },
   },
 });
 
-export const { AddToCart } = ItemInCart.actions;
+export const { AddToCart, setItemQuantity } = ItemInCart.actions;
 
 export default configureStore({
   reducer: {

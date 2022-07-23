@@ -1,7 +1,9 @@
 import { Table } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setItemQuantity } from "../store";
 
 function BillTable() {
+  const dispatch = useDispatch();
   const ItemInCart = useSelector((state) => {
     return state.ItemInCart;
   });
@@ -21,9 +23,24 @@ function BillTable() {
           return (
             <tr>
               <td>{ItemInCart[i].name}</td>
-              <td>{ItemInCart[i].price}</td>
-              <td>{ItemInCart[i].quantity}</td>
-              <td>{ItemInCart[i].price * ItemInCart[i].quantity}원</td>
+              <td>{ItemInCart[i].price.toLocaleString("ko-KR")}원</td>
+              <td>
+                <input
+                  type={"number"}
+                  value={ItemInCart[i].quantity}
+                  min={0}
+                  onChange={(e) => {
+                    dispatch(setItemQuantity([ItemInCart[i], e.target.value]));
+                  }}
+                  style={{ width: "5vmin" }}
+                ></input>
+              </td>
+              <td>
+                {(ItemInCart[i].price * ItemInCart[i].quantity).toLocaleString(
+                  "ko-KR"
+                )}
+                원
+              </td>
             </tr>
           );
         })}
@@ -49,7 +66,7 @@ function TotalPrice() {
       result += ItemInCart[i].quantity * ItemInCart[i].price;
     }
 
-    return result;
+    return result.toLocaleString("ko-KR");
   }
 
   return <>{Total()}</>;
