@@ -1,4 +1,5 @@
 import { Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import { HoemCarousel } from "../Components/Home-Carousel";
 
 function HomePage() {
@@ -9,15 +10,21 @@ function HomePage() {
       </div>
       <HoemCarousel />
       <div className="Home-Link-Container">
-        <Button variant="secondary" href="/Cart" className="Home-Link">
-          Cart
-        </Button>
-        <Button variant="secondary" href="/Portpolio" className="Home-Link">
-          Portpolio
-        </Button>
-        <Button variant="secondary" href="/About" className="Home-Link">
-          About
-        </Button>
+        <NavLink to="/Cart">
+          <Button variant="secondary" className="Home-Link">
+            Cart
+          </Button>
+        </NavLink>
+        <NavLink to="/Portpolio">
+          <Button variant="secondary" className="Home-Link">
+            Portpolio
+          </Button>
+        </NavLink>
+        <NavLink to="/About">
+          <Button variant="secondary" className="Home-Link">
+            About
+          </Button>
+        </NavLink>
       </div>
     </div>
   );

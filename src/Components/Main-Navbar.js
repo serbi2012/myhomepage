@@ -7,7 +7,7 @@ import {
   Navbar,
   Offcanvas,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function MainNavbar() {
   return (
@@ -20,13 +20,18 @@ function MainNavbar() {
       sticky="top"
     >
       <Container fluid>
-        <Navbar.Brand href="/">
-          <img
-            src={process.env.PUBLIC_URL + "/Images/Logo.png"}
-            className="LogoIMG"
-          ></img>
-          RiAXO
-        </Navbar.Brand>
+        <NavLink
+          to="/"
+          style={{ textDecorationLine: "none", textDecoration: "none" }}
+        >
+          <Navbar.Brand>
+            <img
+              src={process.env.PUBLIC_URL + "/Images/Logo.png"}
+              className="LogoIMG"
+            />
+            RiAXO
+          </Navbar.Brand>
+        </NavLink>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${false}`} />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${false}`}
@@ -49,10 +54,30 @@ function MainNavbar() {
               <Button variant="outline-success">Search</Button>
             </Form>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/Cart">Cart</Nav.Link>
-              <Nav.Link href="/Portpolio">Portpolio</Nav.Link>
-              <Nav.Link href="/About">About</Nav.Link>
+              <NavLink
+                to="/"
+                style={{ textDecorationLine: "none", textDecoration: "none" }}
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/Cart"
+                style={{ textDecorationLine: "none", textDecoration: "none" }}
+              >
+                Cart
+              </NavLink>
+              <NavLink
+                to="/Portpolio"
+                style={{ textDecorationLine: "none", textDecoration: "none" }}
+              >
+                Portpolio
+              </NavLink>
+              <NavLink
+                to="/About"
+                style={{ textDecorationLine: "none", textDecoration: "none" }}
+              >
+                About
+              </NavLink>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
